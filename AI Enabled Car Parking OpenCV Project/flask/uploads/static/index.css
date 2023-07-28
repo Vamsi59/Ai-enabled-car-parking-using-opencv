@@ -1,0 +1,137 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+
+                
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url("https://th.bing.com/th/id/R.b6ced9e3b947d818161117d5ed03b14d?rik=fLjFTA7395Q0oQ&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f291814-Lamborghini_Huracan_LP580-2-car-simple_background.jpg&ehk=%2few8%2fwAJIGl9KFPzHbpt2JI%2bSoWOJsZAa%2faD7806K30%3d&risl=&pid=ImgRaw&r=0");
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    column-gap: 30px;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #FFF;
+}
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+}
+h1{
+    font-family: 'Akira Expanded Outline';
+    font-size: 70px;
+    font-weight: 600;
+    color:white;
+    padding-left:50px;
+    
+}
+p{
+font-family: 'Montserrat';
+    font-size: 20px;
+    color:white;
+    padding-left:50px;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 800px;
+    overflow: hidden;
+    background-color:black;
+  }
+  
+  .navbar ul li {
+    float: left;
+  }
+  
+  .navbar li a {
+    font-family: 'Montserrat';
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar li a:hover {
+    background-color: rgb(50, 36, 208);
+  }
+
+
+button {
+		
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 500;
+                    border-radius: 3px;
+                    padding: 0 15px;
+                    border-radius: 100px;
+                    color:white;
+                    background:rgb(19, 19, 21);
+                    line-height: 1.15;
+                    font-size: 14px;
+                    height: 36px;
+                    word-spacing: 0px;
+                    letter-spacing: .0892857143em;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    min-width: 64px;
+                    border: 1px solid rgb(11, 2, 2);
+                    text-align: center;
+                    transition: background 280ms cubic-bezier(0.4, 0, 0.2, 1);                              
+}
+button a{
+    text-decoration: none;
+    color: #FFF;
+}
+button a:hover {
+    color: rgb(238, 244, 238);
+  }
+
+button:hover {
+  box-shadow: 0 0 10px rgba(238, 238, 244, 0.8);
+  animation: glow-animation 1s infinite;
+}
+
+@keyframes glow-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(238, 238, 244, 0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
