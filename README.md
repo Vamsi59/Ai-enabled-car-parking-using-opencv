@@ -29,7 +29,9 @@ imgMedian = cv2.medianBlur(imgThreshold, 5)
 ![image](https://github.com/Vamsi59/Ai-enabled-car-parking-using-opencv/assets/94848154/3075f971-9de0-4878-842a-398a8af07420)
 
 Applying Dilation to image median:
-
+kernel = np.ones((3, 3), np.uint8)
+        imgDilate = cv2.dilate(imgMedian, kernel, iterations=1)
+        
 ![image](https://github.com/Vamsi59/Ai-enabled-car-parking-using-opencv/assets/94848154/2065459c-79c7-43e0-9718-53823a672d2e)
 
 Which gave me more lines, but I still had to figure out which lines were part of the parking space and which weren't. Then, I would also need to detect when a car moved from a spot.Which would also call for a mask to cover unimportant information (trees, light posts, etc.)
