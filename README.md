@@ -7,5 +7,9 @@ What I was able accomplish was to detect how many spots were available in a park
 I'll start with an overview, then talk about my process, and end with some ideas for future work.
 Overview
 ![image](https://github.com/Vamsi59/Ai-enabled-car-parking-using-opencv/assets/94848154/e7e1e637-7ff8-45fe-b877-6cf477dca426)
+Applying gray filter to original image
+gray=cv.cvtColor(img,cv.COLOR_BGR2GRAY)
+![Uploading image.png…]()
+
 
 ![image](https://github.com/Vamsi59/Ai-enabled-car-parking-using-opencv/assets/94848154/be51b85f-78fc-4202-a107-116b8333f728)
