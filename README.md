@@ -5,6 +5,7 @@ The lofty goal for my OpenCV experiment was to take any static image or video of
 What I was able accomplish was to detect how many spots were available in a parking lot, with just a bit of upfront work by the user.
 
 I'll start with an overview, then talk about my process, and end with some ideas for future work.
+
 Original Image:
 
 ![image](https://github.com/Vamsi59/Ai-enabled-car-parking-using-opencv/assets/94848154/1e0ea015-4377-494a-9ed5-710f8ddfd5d6)
@@ -43,6 +44,7 @@ imgDilate = cv2.dilate(imgMedian, kernel, iterations=1)
 Which gave me more lines, but I still had to figure out which lines were part of the parking space and which weren't. Then, I would also need to detect when a car moved from a spot.Which would also call for a mask to cover unimportant information (trees, light posts, etc.)
 
 Flask Running on server:
+
 ![image](https://github.com/Vamsi59/Ai-enabled-car-parking-using-opencv/assets/94848154/e7e1e637-7ff8-45fe-b877-6cf477dca426)
 
 Home Page:
